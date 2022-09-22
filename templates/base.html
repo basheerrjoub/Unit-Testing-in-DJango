@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}Default{% endblock title %}</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body style="text-align: center">
+    <header>
+      <h1><a href="{% url 'homeURL' %}">Home Page</a></h1>
+      <h2><a href="{% url 'aboutURL' %}">About Page</a></h2>
+    </header>
+    {% block content %} {% endblock content %}
+  </body>
+</html>
